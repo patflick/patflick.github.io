@@ -1,0 +1,13 @@
+# main links links
+main:
+  - title: "Projects"
+    url: /projects/
+
+  - title: "Publications"
+    url: /publications/
+
+  - title: "About me"
+    url: /about/
+
+  - title: "CV"
+    url: /images/cv-flick.pdf

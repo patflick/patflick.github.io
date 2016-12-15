@@ -1,0 +1,68 @@
+---
+---
+
+{% comment %}
+<!--
+we are not using the given reference format but creating our own with liquid
+first:
+pre-process author names (replace " and " by ", " and bold my name
+-->
+{% endcomment %}
+
+
+{% assign au = "" | split:"|"  %}
+{% assign authors = entry.author | split: " and " %}
+{% for name in authors %}
+{% assign fl = name | split: ", " %}
+{% assign l = fl[0] %}
+{% assign f = fl[1] | truncate: 1, "" %}
+{% capture n %} {{l}}, {{f}}. {% endcapture %}
+{% if l == "Flick" %}
+{% capture n %}<b>{{n}}</b>{% endcapture %}
+{% endif %}
+{% assign au = au | push: n %}
+{% endfor %}
+
+<span id="{{key}}">
+    <a href="{{entry.url}}">{{entry.title}}</a>
+  <br/>
+  {{ au | join: ", " }}
+  <i>
+  {{entry.venue}}
+  </i>
+</span>
+
+<div id="{{key}}-materials">
+    {% if entry.abstract %}
+    <a data-toggle="collapse" href="#{{key}}-abstract">Abstract</a>
+    {% endif %}
+
+    <a class="btn btn--info" onclick="$('#{{key}}-bibtex').toggle()">BibTeX<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+
+    {% if entry.doi %}
+    <a class="btn btn--success" href="http://dx.doi.org/{{entry.doi}}">doi</a>
+    {% endif %}
+
+    {% if entry.github %}
+    <a class="btn" href="{{entry.github}}">code <i class="fa fa-github" aria-hidden="true"></i></a>
+    {% endif %}
+
+    {% if link %}
+    <a href="{{link}}">Download</a>
+    {% endif %}
+
+    {% if entry.mytag %}
+    <a class="btn btn--warning" href="{{entry.mytaglink}}">{{entry.mytag}}</a>
+    {% endif %}
+
+  {% if entry.abstract %}
+  <p id="{{key}}-abstract" class="collapse">{{entry.abstract}}</p>
+  {% endif %}
+
+  <div id="{{key}}-bibtex" style="display:none;">
+  {% highlight bibtex %}
+  {{entry.bibtex}}
+  {% endhighlight %}
+  </div>
+
+</div>
