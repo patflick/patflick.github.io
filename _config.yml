@@ -269,4 +269,4 @@ scholar:
     style: apa-no-doi-no-issue
     repository: pdf
     #group_by: year
-    bibliography_template: biliography
+    bibliography_template: bibliography
