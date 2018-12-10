@@ -1,4 +1,10 @@
 <!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.4.1 by Michael Rose
+  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
@@ -22,6 +28,8 @@
 
 
 
+
+<meta name="author" content="Patrick Flick">
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="Patrick Flick">
@@ -84,6 +92,21 @@
 <!-- For all browsers -->
 <link rel="stylesheet" href="https://patflick.github.io/assets/css/main.css">
 
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
 <meta http-equiv="cleartype" content="on">
     <!-- start custom head snippets -->
 
@@ -101,9 +124,8 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
+        <a class="site-title" href="https://patflick.github.io/">Patrick Flick</a>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://patflick.github.io/">Patrick Flick</a></li>
           
             
             <li class="masthead__menu-item"><a href="https://patflick.github.io/projects/">Projects</a></li>
@@ -118,6 +140,7 @@
             <li class="masthead__menu-item"><a href="https://patflick.github.io/images/cv-flick.pdf">CV</a></li>
           
         </ul>
+        <button><div class="navicon"></div></button>
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
@@ -147,7 +170,7 @@
     <h3 class="author__name" itemprop="name">Patrick Flick</h3>
     
       <p class="author__bio" itemprop="description">
-        PhD student at Georgia Institute of Technology.
+        Ph.D. candidate at Georgia Institute of Technology.
       </p>
     
   </div>
@@ -180,6 +203,12 @@
 
       
 
+      
+        <li>
+          <a href="https://www.linkedin.com/in/patrickflick" itemprop="sameAs">
+            <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
       
 
       
@@ -282,6 +311,7 @@ I’m advised by Professor <a href="http://www.cc.gatech.edu/~saluru/">Srinivas 
   
 </div>
 
+
     <div class="page__footer">
       <footer>
         <!-- start custom footer snippets -->
@@ -302,7 +332,7 @@ I’m advised by Professor <a href="http://www.cc.gatech.edu/~saluru/">Srinivas 
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2016 Patrick Flick. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2018 Patrick Flick. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
       </footer>
     </div>
 
