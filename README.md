@@ -1,3 +1,14 @@
+To use (updated) jekyll:
+
+```
+gem install jekyll bundler
+```
+
+Prepare jekyll and its dependencies:
+```
+bundle install
+```
+
 To build and deploy after changes run the following in the `source` branch:
 
 ```
