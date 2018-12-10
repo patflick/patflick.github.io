@@ -14,7 +14,7 @@ Parallel Distributed Memory Text Indexing
 -----------------------------------------
 
 ![image-left](/images/SA_ST_small.png){: .align-left}
-Suffix Array, LCP Array, and Suffix Tree construction on parallel distributed
+Parallel Suffix Array, LCP Array, and Suffix Tree construction on distributed
 memory clusters, implemented in C++11 using [mxx](#mxx).
 
 

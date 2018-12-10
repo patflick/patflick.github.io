@@ -87,7 +87,7 @@ analytics:
 author:
   name             : "Patrick Flick"
   avatar           : "images/iceland.jpg"
-  bio              : "PhD student at Georgia Institute of Technology."
+  bio              : "Ph.D. candidate at Georgia Institute of Technology."
   location         : "Atlanta, GA"
   email            : "patrick.flick@gmail.com"
   uri              :
@@ -102,7 +102,7 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
+  linkedin         : "patrickflick"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
